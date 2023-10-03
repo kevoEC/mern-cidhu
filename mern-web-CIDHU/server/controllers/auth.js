@@ -1,5 +1,6 @@
-const User = require('../models/user');
 const bcrypt = require('bcrypt-nodejs');
+const User = require('../models/user');
+
 
 function register(req, res){
     const {firstname, lastname, email, password} = req.body;
@@ -12,17 +13,24 @@ function register(req, res){
         firstname,
         lastname,
         email: email.toLowerCase(),
-        password,
         role: "user",
         active: false
     });
     const salt = bcrypt.genSaltSync(10);
-    
-    res.status(200).send({
-        message: "TODO OK"
+    const hashPassword = bcrypt.hashSync(password, salt); 
+    user.password = hashPassword;
+    console.log(user);
+
+    user.save((error, userStored) => {
+
+    if(error){
+        res.status(500).send({message: `Error al crear el usuario: ${error}`});
+    }else{
+        res.status(200).send({userStored});
+    }
+
     });
 }
-
 module.exports = {  
     register,
 };

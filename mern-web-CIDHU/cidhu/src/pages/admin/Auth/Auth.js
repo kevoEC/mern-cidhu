@@ -1,12 +1,13 @@
 import React from 'react'
-import {Icon} from "../../../assets"
 import "./Auth.scss"
+import {Icon} from "../../../assets"
 
 export function Auth() {
   return (
     <div className='auth'>
-         <Icon.LogoWhite className="logo"/>
-        <h1>ESTAMOS EN AUTH</h1>
+          <Icon.LogoWhite className='logo'/>
+
+        <h1>Formulario de Registro</h1>
     </div>
   )
 }

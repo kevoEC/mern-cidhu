@@ -5,7 +5,7 @@ import {WebRouter, AdminRouter} from './routers';
 export default function App() {
   return (
     <BrowserRouter>
-    //<WebRouter/>
+    <WebRouter/>
     <AdminRouter/>
     </BrowserRouter>
   );

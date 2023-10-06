@@ -1,5 +1,18 @@
 @import "~/src/scss/index.scss";
 
 .auth{
-    background-color: #f00;
+    background-image: url("../../../assets/jpg/auth-bg.jpg");
+    min-height: 100vh ;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    
+    .logo{
+        width: 200px;
+        margin-bottom: 30px;
+
+    }
 }

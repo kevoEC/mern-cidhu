@@ -1,14 +1,9 @@
 import React from 'react'
 import {Routes, Route} from "react-router-dom"
-import {map} from "lodash"
 import {AdminLayout} from "../layouts"
-import { Auth } from "../pages/admin/Auth/Auth" 
-import {Users}  from "../pages/admin/Users/Users"
-import {Blog} from "../pages/admin/Blog/Blog"
-import{Denuncias} from "../pages/admin/Denuncias/Denuncias"
-import {Menu} from "../pages/admin/Menu/Menu"
+import {Auth, Users, Blog, Denuncias, Menu} from "../pages/admin/Index"
 
-const user = { email: "kevin1977@gmail.com"};
+const user = null;
 
 export function AdminRouter() {
 
@@ -23,7 +18,7 @@ export function AdminRouter() {
   return (
     <Routes>
         {!user ? (
-            <Route path="/admin/*" element={loadLayout(AdminLayout, Auth)}/>
+            <Route path="/admin/*" element={<Auth/>}/>
         ):(
           <>
           {["/admin", "/admin/blog"].map((path) => (

@@ -2,11 +2,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const {API_VERSION} = require('./constants');
+
 const app = express();
 
 //Import routings
 const authRoutes = require('./routers/auth');
 const userRoutes = require('./routers/user');
+const menuRoutes = require('./routers/menu');
 
 // Configure Body Parse
 app.use(bodyParser.urlencoded({extended: true}));
@@ -21,5 +23,6 @@ app.use(cors());
 //Configure routings
 app.use(`/api/${API_VERSION}`, authRoutes)
 app.use(`/api/${API_VERSION}`, userRoutes)
+app.use(`/api/${API_VERSION}`, menuRoutes)
 
 module.exports = app;

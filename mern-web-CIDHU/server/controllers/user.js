@@ -80,9 +80,23 @@ async function updateUser(req, res){
      });
 }
 
+//ELIMINAR USUARIO
+async function deleteUser(req, res){
+    const {id} = req.params;
+    User.findByIdAndDelete({_id: id}, (error) => {
+        if(error){
+            res.status(400).send({message: `Error al eliminar el usuario: ${error}`});
+        }else{
+            res.status(200).send({message: "Eliminación exitosa"});
+        }	
+     });
+}
+
+//EXPORTAR LOS MÉTODOS
 module.exports = {
     getMe,
     getUsers,
     createUser,
-    updateUser
+    updateUser,
+    deleteUser
 }

@@ -10,7 +10,7 @@ async function getMe(req, res){
     if(!response){
         res.status(404).send({message: "Usuario no encontrado"});
     } else {
-        res.status(200).send({user: response});
+        res.status(200).send(response);
     }
 }
 
@@ -45,9 +45,9 @@ async function createUser(req, res){
     // GUARDAR USUARIO
     user.save((error, userStored) => {
         if(error){
-            res.status(500).send({message: `Error al crear el usuario: ${error}`});
+            res.status(500).send({message: `Error al crear el usuario`});
         }else{
-            res.status(201).send({userStored});
+            res.status(201).send(userStored);
         }
     });
 }

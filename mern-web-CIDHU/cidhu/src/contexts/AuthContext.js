@@ -46,15 +46,15 @@ export function AuthProvider(props) {
             authController.setAccessToken(accessToken);
             await login(accessToken);
         } catch (error) {
-            logout();
+            console.error(error);
         }
     }
 
     const login = async (accessToken) => {
         try {
             const response = await userController.getMe(accessToken);
-            delete response.user.password;
-            console.log(response);
+            //const userResponse = response.user;
+            delete response.password;
             setUser(response);
             setToken(accessToken);
         } catch (error) {

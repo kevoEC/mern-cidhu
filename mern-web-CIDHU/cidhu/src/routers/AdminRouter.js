@@ -1,7 +1,7 @@
 import React from 'react'
 import {Routes, Route} from "react-router-dom"
 import {AdminLayout} from "../layouts"
-import {Auth, Users, Blog, Denuncias, Menu} from "../pages/admin/Index"
+import {Auth, Users, Blog, Denuncias, Menu} from "../pages/admin"
 
 const user = null;
 

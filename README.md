@@ -1,5 +1,4 @@
-# mern-cidhu
-Proyecto MERN mvc-cidhu 
+### Proyecto MERN mvc-cidhu 
 
 ## link video CRUD
 [![Ver Video Demo](https://img.youtube.com/vi/TU_ID_DE_YOUTUBE/0.jpg)](https://www.youtube.com/watch?v=TU_ID_DE_YOUTUBE)
@@ -22,7 +21,7 @@ Este proyecto utiliza el patrón de diseño Modelo-Vista-Controlador (MVC) para 
 
 #Diagrama de la arquitectura del proyecto
 
-![Texto Alternativo](mern-web-CIDHU/server/uploads/DiagramaMVC.png)
+![Texto Alternativo](mern-web-CIDHU/server/uploads/DiagramaMVC.jpeg)
 
 #Explicación del diagrama
 
@@ -54,14 +53,15 @@ const miControlador = {
 
 El proceso de login permite a los usuarios autenticarse en la aplicación. Los usuarios envían sus credenciales a través de un formulario React. En el servidor, el Controlador Express.js valida las credenciales y emite un token de acceso, permitiendo a los usuarios acceder a recursos protegidos.
 
-#Diagrama de la arquitectura del proyecto
+### Diagrama de la arquitectura del proyecto
 
-![Texto Alternativo](mern-web-CIDHU/server/uploads/loginArquitectura.png)
+![Texto Alternativo](mern-web-CIDHU/server/uploads/loginArquitectura.jpeg)
 
-#Explicación de la arquitectura del login
-El proceso es el siguiente
-El Cliente (Frontend) envía una petición HTTP al servidor.
-El Controlador (Express.js en el Backend) recibe la solicitud y valida las credenciales del usuario.
-Si las credenciales son válidas, el Controlador genera un Token de Acceso (JWT), caso contrario devuelve un error como respuesta.
-El Token de Acceso se devuelve en la respuesta HTTP al Cliente.
-El Cliente almacena el Token de Acceso y lo utiliza para acceder a Recursos Protegidos en la aplicación.
+### Explicación de la arquitectura del login
+
+-  El proceso es el siguiente
+-  El Cliente (Frontend) envía una petición HTTP al servidor.
+-  El Controlador (Express.js en el Backend) recibe la solicitud y valida las credenciales del usuario.
+-  Si las credenciales son válidas, el Controlador genera un Token de Acceso (JWT), caso contrario devuelve un error como respuesta.
+-  El Token de Acceso se devuelve en la respuesta HTTP al Cliente.
+-  El Cliente almacena el Token de Acceso y lo utiliza para acceder a Recursos Protegidos en la aplicación.

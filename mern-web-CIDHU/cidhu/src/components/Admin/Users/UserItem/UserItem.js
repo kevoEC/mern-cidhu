@@ -70,7 +70,7 @@ export function UserItem(props) {
     <>
         <div className='user-item'>
             <div className='user-item__info'>
-                <Image avatar src={user.avatar ? `${ENV.BASE_PATH2}/${user.avatar}` : image.noAvatar} />
+                <Image avatar src={user.avatar ? `${ENV.BASE_PATH2}/${user.avatar}` : image.noLogoUsuario} />
                 <div>
                     <p>{user.firstname} {user.lastname}</p>
                     <p>{user.email}</p>

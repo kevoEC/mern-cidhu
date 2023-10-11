@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import { Tab } from "semantic-ui-react"
+import { Tab, Image } from "semantic-ui-react"
 import { RegisterForm, LoginForm } from "../../../components/Admin/Auth"
 import "./Auth.scss"
-import {Icon} from "../../../assets"
+import {image, Icon} from "../../../assets"
 
 export function Auth() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -28,7 +28,8 @@ export function Auth() {
   ];
   return (
     <div className='auth'>
-          <Icon.LogoWhite className='logo'/>
+        <Image src={image.logoPerfecto} className='logo'/>
+          {/* <Icon.LogoWhite className='logo'/> */}
         <Tab className='auth__forms' panes={panes} activeIndex={activeIndex} onTabChange={(_, data) =>setActiveIndex(data.activeIndex)}/>
     </div>
   )

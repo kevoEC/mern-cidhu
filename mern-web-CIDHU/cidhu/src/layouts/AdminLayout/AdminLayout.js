@@ -1,5 +1,6 @@
 import React from "react";
-import {Icon} from "../../assets"
+import { image} from "../../assets"
+import { Image } from "semantic-ui-react"
 import {AdminMenu, Logout} from "../../components/Admin/AdminLayout"
 import "./AdminLayout.scss"
 
@@ -9,7 +10,8 @@ export function AdminLayout(props){
     return (
         <div className="admin-layout">
             <div className="admin-layout__left">
-                <Icon.LogoWhite className="logo"/>
+                <Image src={image.logoPerfecto} className="logo"/>
+                {/* <Icon.LogoWhite className="logo"/> */}
                 <AdminMenu/>
             </div>
             <div className="admin-layout__right">

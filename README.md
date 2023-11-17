@@ -1,9 +1,12 @@
 # Proyecto MERN mvc-cidhu 
 
-### link: [![CRUD CIDHU](https://img.youtube.com/vi/TU_ID_DE_YOUTUBE/0.jpg)](https://www.youtube.com/watch?v=TU_ID_DE_YOUTUBE)
+### link video CRUD: ([https://www.youtube.com/watch?v=TU_ID_DE_YOUTUBE](https://youtu.be/XFLVaXj6nXM))
 
 
-### link: [![Login CIDHU](https://img.youtube.com/vi/TU_ID_DE_YOUTUBE/0.jpg)](https://www.youtube.com/watch?v=TU_ID_DE_YOUTUBE)
+### link video LOGIN: ([https://youtu.be/XFLVaXj6nXM](https://youtu.be/s7X0ROdx1lM)))
+
+
+### link video ADMIN: ([https://youtu.be/s7X0ROdx1lM](https://youtu.be/i5Uo7KNczkY))))
 
 
 ## Descripción

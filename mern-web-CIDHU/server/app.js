@@ -9,6 +9,9 @@ const app = express();
 const authRoutes = require('./routers/auth');
 const userRoutes = require('./routers/user');
 const menuRoutes = require('./routers/menu');
+const denunciaRoutes = require('./routers/denuncias');
+const procesoRoutes = require('./routers/procesos');
+const fechaRoutes = require('./routers/fecha');
 
 // Configure Body Parse
 app.use(bodyParser.urlencoded({extended: true}));
@@ -24,5 +27,9 @@ app.use(cors());
 app.use(`/api/${API_VERSION}`, authRoutes)
 app.use(`/api/${API_VERSION}`, userRoutes)
 app.use(`/api/${API_VERSION}`, menuRoutes)
+app.use(`/api/${API_VERSION}`, denunciaRoutes)
+app.use(`/api/${API_VERSION}`, procesoRoutes)
+app.use(`/api/${API_VERSION}`, fechaRoutes)
+
 
 module.exports = app;

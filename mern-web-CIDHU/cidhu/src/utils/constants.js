@@ -10,6 +10,9 @@ export const ENV = {
         USER_ME: 'user/me',
         USER: 'user',
         USERS: "users",
+        DENUNCIA_GET: 'denuncia/:id',
+        DENUNCIA: 'denuncia',
+        DENUNCIAS: 'denuncias',
         REFRESH_ACCESS_TOKEN: 'auth/refresh_access_token'
     },
     JWT: {

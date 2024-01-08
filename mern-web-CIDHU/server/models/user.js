@@ -10,7 +10,13 @@ const UserSchema = mongoose.Schema({
     password: String,
     role: String,
     active: Boolean,
-    avatar: String
+    avatar: String,
+    Denuncias: [
+        {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Denuncias",
+        }
+    ]
 });
 
 module.exports = mongoose.model('User', UserSchema);

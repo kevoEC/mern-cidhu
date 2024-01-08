@@ -34,10 +34,10 @@ export  function Users() {
   return (
     <>
         <div className='users-page'>
-        <Button className='users-page__add' primary onClick={onOpenCloseModal}>
-          Nuevo usuario
-        </Button>
-        <Tab className='menu' menu={{ secondary: true}} panes={panes} />
+          <Button className='users-page__add' primary onClick={onOpenCloseModal}>
+            Nuevo usuario
+          </Button>
+          <Tab className='menu' menu={{ secondary: true}} panes={panes} />
         </div>
 
         <BasicModal 
